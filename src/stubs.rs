@@ -469,21 +469,21 @@ mod stubs {
         val: *const scf_value_t,
         buf: *mut c_char,
         size: size_t,
-    ) -> c_int {
+    ) -> ssize_t {
         unimplemented!()
     }
     pub unsafe fn scf_value_get_ustring(
         val: *const scf_value_t,
         buf: *mut c_char,
         size: size_t,
-    ) -> c_int {
+    ) -> ssize_t {
         unimplemented!()
     }
     pub unsafe fn scf_value_get_opaque(
         val: *const scf_value_t,
         buf: *mut c_void,
         size: size_t,
-    ) -> c_int {
+    ) -> ssize_t {
         unimplemented!()
     }
 
@@ -506,14 +506,12 @@ mod stubs {
     pub unsafe fn scf_value_set_astring(
         val: *mut scf_value_t,
         new: *const c_char,
-        size: size_t,
     ) -> c_int {
         unimplemented!()
     }
     pub unsafe fn scf_value_set_ustring(
         val: *mut scf_value_t,
         new: *const c_char,
-        size: size_t,
     ) -> c_int {
         unimplemented!()
     }

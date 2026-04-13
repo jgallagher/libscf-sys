@@ -1,6 +1,6 @@
 [package]
 name = "libscf-sys"
-version = "1.1.0"
+version = "1.2.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
 description = "native bindings to libscf, the service management facility (SMF)"

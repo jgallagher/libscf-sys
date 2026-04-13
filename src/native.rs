@@ -291,17 +291,17 @@ extern "C" {
         val: *const scf_value_t,
         buf: *mut c_char,
         size: size_t,
-    ) -> c_int;
+    ) -> ssize_t;
     pub fn scf_value_get_ustring(
         val: *const scf_value_t,
         buf: *mut c_char,
         size: size_t,
-    ) -> c_int;
+    ) -> ssize_t;
     pub fn scf_value_get_opaque(
         val: *const scf_value_t,
         buf: *mut c_void,
         size: size_t,
-    ) -> c_int;
+    ) -> ssize_t;
 
     pub fn scf_value_set_boolean(val: *mut scf_value_t, new: u8);
     pub fn scf_value_set_count(val: *mut scf_value_t, new: u64);
@@ -314,12 +314,10 @@ extern "C" {
     pub fn scf_value_set_astring(
         val: *mut scf_value_t,
         new: *const c_char,
-        size: size_t,
     ) -> c_int;
     pub fn scf_value_set_ustring(
         val: *mut scf_value_t,
         new: *const c_char,
-        size: size_t,
     ) -> c_int;
     pub fn scf_value_set_opaque(
         val: *mut scf_value_t,
