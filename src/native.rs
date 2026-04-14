@@ -93,6 +93,13 @@ extern "C" {
         name: *const c_char,
         out: *mut scf_propertygroup_t,
     ) -> c_int;
+    pub fn scf_service_add_pg(
+        service: *mut scf_service_t,
+        name: *const c_char,
+        pgtype: *const c_char,
+        flags: u32,
+        out: *mut scf_propertygroup_t,
+    ) -> c_int;
 
     pub fn scf_iter_scope_services(
         iter: *mut scf_iter_t,
