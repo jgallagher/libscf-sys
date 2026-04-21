@@ -94,7 +94,7 @@ extern "C" {
         out: *mut scf_propertygroup_t,
     ) -> c_int;
     pub fn scf_service_add_pg(
-        service: *mut scf_service_t,
+        service: *const scf_service_t,
         name: *const c_char,
         pgtype: *const c_char,
         flags: u32,
